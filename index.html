@@ -24,9 +24,16 @@
     }
 
     .name {
-      font-size: 3.8rem; /* Adjusted size */
-      font-weight: bold; /* Bold only */
+      font-size: 3.8rem; /* Default for laptop/desktop */
+      font-weight: bold; 
       margin-bottom: 20px;
+    }
+
+    /* Responsive adjustment for smaller screens */
+    @media (max-width: 600px) {
+      .name {
+        font-size: 2.5rem; /* Smaller on phones */
+      }
     }
 
     .timezone {
@@ -55,5 +62,6 @@
   </div>
 </body>
 </html>
+
 
 
