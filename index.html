@@ -12,7 +12,7 @@
       height: 100vh;
       margin: 0;
       display: grid;
-      place-items: center;
+      place-items: center; /* vertical + horizontal centering */
       text-align: center;
     }
 
@@ -20,14 +20,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: translateY(-5%); /* Move whole block slightly up */
+      transform: translateY(-4%); /* slightly less up to balance ZV */
     }
 
     .name {
       font-size: 4.5rem;
       font-weight: bold;
       margin-bottom: 20px;
-      margin-top: 5px; /* Original ZV tweak */
+      margin-top: -5px; /* move ZV down slightly relative to container */
     }
 
     .text-block {
@@ -54,7 +54,7 @@
 
     .interests {
       font-size: 1.3rem;
-      line-height: 1.4; /* keep small spacing */
+      line-height: 1.4; /* small spacing between lines if mobile wraps */
     }
   </style>
 </head>
@@ -73,6 +73,7 @@
   </div>
 </body>
 </html>
+
 
 
 
