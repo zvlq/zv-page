@@ -12,7 +12,7 @@
       height: 100vh;
       margin: 0;
       display: grid;
-      place-items: center; /* vertical + horizontal centering */
+      place-items: center;
       text-align: center;
     }
 
@@ -20,14 +20,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: translateY(-4%); /* slightly less up to balance ZV */
+      transform: translateY(-2%); /* move entire block slightly up, less than before */
     }
 
     .name {
       font-size: 4.5rem;
       font-weight: bold;
       margin-bottom: 20px;
-      margin-top: -5px; /* move ZV down slightly relative to container */
+      margin-top: 0; /* remove old negative margin */
     }
 
     .text-block {
@@ -35,7 +35,6 @@
       flex-direction: column;
       align-items: center;
       gap: 10px;
-      margin-top: 0;
     }
 
     @media (max-width: 600px) {
@@ -54,7 +53,7 @@
 
     .interests {
       font-size: 1.3rem;
-      line-height: 1.4; /* small spacing between lines if mobile wraps */
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -73,6 +72,7 @@
   </div>
 </body>
 </html>
+
 
 
 
