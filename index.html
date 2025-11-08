@@ -11,8 +11,9 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       height: 100vh;
       margin: 0;
-      display: grid;
-      place-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* vertical centering */
       text-align: center;
     }
 
@@ -20,27 +21,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: translateY(-2%); /* move entire block slightly up, less than before */
+      gap: 10px; /* controls spacing between lines */
     }
 
     .name {
       font-size: 4.5rem;
       font-weight: bold;
-      margin-bottom: 20px;
-      margin-top: 0; /* remove old negative margin */
-    }
-
-    .text-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    @media (max-width: 600px) {
-      .name {
-        font-size: 3.5rem;
-      }
+      margin: 0; /* remove negative margins */
     }
 
     .timezone {
@@ -55,23 +42,24 @@
       font-size: 1.3rem;
       line-height: 1.4;
     }
+
+    @media (max-width: 600px) {
+      .name {
+        font-size: 3.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="name">𝙕𝙑</div>
-    <div class="text-block">
-      <div class="timezone">AEST (GMT+10) 🌏</div>
-      <div class="supercell-id">
-        Supercell Player ID: zvlqrz
-      </div>
-      <div class="interests">
-        Interests: Typography 🖋️ Architectural Structures 🏛️
-      </div>
-    </div>
+    <div class="timezone">AEST (GMT+10) 🌏</div>
+    <div class="supercell-id">Supercell Player ID: zvlqrz</div>
+    <div class="interests">Interests: Typography 🖋️ Architectural Structures 🏛️</div>
   </div>
 </body>
 </html>
+
 
 
 
