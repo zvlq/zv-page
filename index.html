@@ -12,23 +12,30 @@
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: flex-start; /* Align content from top */
+      align-items: center;
       text-align: center;
       margin: 0;
-      padding-top: 100px; /* Push container down slightly */
     }
 
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 12px; /* Add small spacing between items */
     }
 
     .name {
       font-size: 3.8rem; /* Default for laptop/desktop */
       font-weight: bold; 
       margin-bottom: 20px;
+    }
+
+    /* New wrapper for text below the name */
+    .text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: -20px; /* Move text block up slightly */
     }
 
     @media (max-width: 600px) {
@@ -53,12 +60,14 @@
 <body>
   <div class="container">
     <div class="name">𝙕𝙑</div>
-    <div class="timezone">AEST (GMT+10) 🌏</div>
-    <div class="supercell-id">
-      Supercell Player ID: zvlqrz
-    </div>
-    <div class="interests">
-      Interests: Typography 🖋️ | Architectural Structures 🏛️
+    <div class="text-block">
+      <div class="timezone">AEST (GMT+10) 🌏</div>
+      <div class="supercell-id">
+        Supercell Player ID: zvlqrz
+      </div>
+      <div class="interests">
+        Interests: Typography 🖋️ | Architectural Structures 🏛️
+      </div>
     </div>
   </div>
 </body>
